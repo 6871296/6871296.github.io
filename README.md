@@ -1,2 +1,2 @@
-# 6871296.github.io
-my GitHub Pages home page
+# [6871296.github.io](6871296.github.io)
+我的GitHub Pages主页

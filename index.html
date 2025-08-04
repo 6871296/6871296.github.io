@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--本人HTML水平不高，代码可能有很多瑕疵，还请见谅！-->
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>主页-6871296</title>
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="icon" href="/img/icon.png">
+    </head>
+    <body>
+        <div class="head">
+            <a href="/" class="icon">
+                <img href="/img/icon.png">
+            </a>
+            <a href="github.com/6871296">
+                我的GitHub
+            </a>
+            <a href="/repos" class="repos-access">
+                仓库
+            </a>
+            <a href="/friends" class="friends-access">
+                朋友
+            </a>
+            <a href="/tools" class="tools-access">
+                工具
+            </a>
+            <a href="/chatbox" class="chatbox-access">
+                留言板
+            </a>
+            <a href="/imglib">
+                图片仓库
+            </a>
+        </div>
+        <div class="title">
+            <h1>
+                Hello，我是6871296
+            </h1>
+            <h3>
+                欢迎访问我的Github Pages主页
+            </h3>
+        </div>
+        <div class="webcounter">
+            网页访问次数：<img href="https://w.saobby.com/w/">
+            网页访问IP数：<img href="https://w.saobby.com/w/">
+            <a class="webcounter-saobbylogo" href="https://www.saobby.com/webcounter">
+                <img class="saobby-logo" src="https://upload-static.saobby.com/static/upload/6KAIVvpKKDYnyCvY.png">Saobby 提供技术支持
+            </a>
+        </div>
+        <div class="body">
+            <div class="top-data">
+                <h3 class="top-data-title">
+                    置顶内容
+                </h3>
+                <div class="top-data-info">
+                    {% for i in top-info%}
+                        <a href="{{i.site}}" class="top-info">
+                            {{i.data}}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="repos">
+                <h3 class="repos-title">
+                    我的仓库
+                </h3>
+                <a href="6871296.github.io/repos">
+                    查看更多
+                </a>
+                <div class="repos-recommended">
+                    <div class="repos-recommended-title">
+                        <h4>
+                            主推项目
+                        </h4>
+                        <div>
+                            主推项目都是我做得最好的项目，包含完善的代码、README和branch体系。<br>
+                            希望这个网站能让它们有更多人问津……
+                        </div>
+                    </div>
+                    {% for i in repos-recommended %}
+                        <div class="repo">
+                            <a href="{{i.site}}">
+                                <h5>
+                                    {{i.title}}
+                                </h5>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="repos-other">
+                    <h4 class="repos-other-title">
+                        其他仓库
+                    </h4>
+                    {% for i in repos-other %}
+                        <div class="repo">
+                            <a href="6871296.github.com/friends/{{i}}">
+                                <h5>
+                                    {{i.title}}
+                                </h5>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="friends">
+                <h3 class="friends-title">
+                    我的好友
+                </h3>
+                <div class="friends-info">
+                    {% for i in friends %}
+                        <div class="friend">
+                            <img src="/img/{{i}}" class="friend-icon">
+                            <a href="6871296.github.io/friends/{{i}}" class="friend-name">
+                                {{i}}
+                            </a>
+                            <div class="friend-tags">
+                                {% for j in i.tags %}
+                                    <div class="friend-tag">
+                                        {{j}}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-accesses">
+                <h6 class="bottom-accesses-title">
+                    友情链接
+                </h6>
+                <div class="bottom-access-info">
+                    <a href="github.com" class="bottom-access-github">
+                        GitHub
+                    </a>
+                    <a href="pages.github.com" class="bottom-access-githubpages">
+                        GitHub Pages
+                    </a>
+                    <a href="github.dev" class="bottom-access-githubdev">
+                        github.dev
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
