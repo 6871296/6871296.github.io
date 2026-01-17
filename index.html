@@ -13,8 +13,11 @@
 				color:#687129;
 			}
 			div.margined{
-				margin: 20px;
+				margin: 20px 10px;
 				width: 80%;
+				border-radius: 15px;
+				border-color: whitesmoke;
+				border:3px;
 			}
 			a.site{
 				margin: 20px;
@@ -27,17 +30,34 @@
 			a.site:hover{
 			    background-color: cyan;
 			}
+			a.goto-github{
+				border-radius: 3px;
+				text-decoration: none;
+				background-color: #0000;
+			}
+			a.goto-github:hover{
+				background-color: #bbba;
+			}
 		</style>
 	</head>
 	<body>
 		<h1>6871296的个人主页</h1>
-		<p>现在还只是我Web项目的汇总（因为我Web项目有点多）</p>
+		<a href="./api-docs" alt="无聊的网页工具" class="site">
+			无聊的网页工具
+		</a>
+		<p>我的仓库</p>
 		<div class="margined">
-			<a href="./languanges-site" alt="Languanges Site（点击跳转）" class="site">
+			<a href="./languanges-site" alt="点击前往网页" class="site">
 				Languanges Site
+				<a href="https://github.com/6871296/languanges-site" alt="点击前往GitHub仓库" class="goto-github">
+					<img src="https://github.githubassets.com/favicon.ico">
+				</a>
 			</a>
 			<a href="./devicon-gen" alt="Devicon生成器（点击跳转）" class="site">
 				Devicon生成器
+				<a href="https://github.com/6871296/languanges-site" alt="点击前往GitHub仓库" class="goto-github">
+					<img src="https://github.githubassets.com/favicon.ico">
+				</a>
 			</a>
 			<span href="./cpp-compiler-web" alt="C++在线编译器（点击跳转）" class="site">
 				C++在线编译器（未完成）
